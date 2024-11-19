@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+  
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    width: 85%;
+}
+:root{
+    --dark-blue: rgba(43, 56, 68, 1);
+}
+a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+}
+a:hover{
+    color: rgb(183, 180, 180);
+    font-size: 19px;
+    transition: 300ms ease;
+}
+a:active{
+    color: rgb(208, 182, 182);
+    font-size: 20px;
+    transition: 300ms ease;
+}
+h2{
+    font-size: 24px;
+}
+body{
+    background: rgba(32, 44, 54, 1);
+}
+.nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 23px 0 24px;
+}
+nav{
+    background: var(--dark-blue);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0562);
+}
+input{
+    margin-top: 50px;
+    background-color: var(--dark-blue);
+    border: none;
+    width: 480px;
+    padding: 18px 0 18px 74px;
+    color: white;
+    background-image: url('search.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 30px;
+}
+h3{
+    color: white;
+    font-size: 18px;
+    padding: 32px 0 32px 0;
+}
+.card-chield{
+    background-color: var(--dark-blue);
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-box{
+    padding-top: 50px;
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.card-box2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+@media screen and (max-width:1024px){
+    .card-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    .input{
+        width: 100%;
+        padding: 30px 60px;
+    }
+    .card-box2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:834px){
+    .card-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    .input{
+        width: 100%;
+        padding: 30px 60px;
+    }
+    .card-box2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:375px){
+    .card-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .card-box2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
